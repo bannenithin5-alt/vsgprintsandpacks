@@ -1,0 +1,1073 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Venkatasai Graphics | Offset Printing & Packaging</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="code.css">
+    
+
+    <style>
+
+        .established {
+            display: inline-block;
+            padding: 8px 14px;
+            margin-bottom: 18px;
+            background: #111;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .hero-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-image-label {
+            position: absolute;
+            left: 30px;
+            bottom: 30px;
+            z-index: 3;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-image-label strong {
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+
+        .hero-image-label span {
+            font-size: 12px;
+            opacity: .85;
+        }
+
+        .company-story {
+            padding: 100px 6%;
+            max-width: 1400px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .story-image {
+            height: 520px;
+            overflow: hidden;
+        }
+
+        .story-image img {
+            height: 100%;
+            object-fit: cover;
+            transition: .7s;
+        }
+
+        .story-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .story-year {
+            display: block;
+            font-size: 100px;
+            line-height: .8;
+            font-weight: 900;
+            color: #eee;
+            margin-bottom: -12px;
+        }
+
+        .story-content h2 {
+            font-size: clamp(38px, 5vw, 65px);
+            line-height: 1;
+            margin-bottom: 25px;
+        }
+
+        .story-content h2 span {
+            color: #e21b23;
+        }
+
+        .story-content > p:not(.section-label) {
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+        .story-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 1px solid #ddd;
+        }
+
+        .story-stats div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .story-stats strong {
+            font-size: 25px;
+            color: #e21b23;
+        }
+
+        .story-stats span {
+            font-size: 11px;
+            color: #777;
+        }
+
+        .quick-services a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            color: #fff;
+            border-right: 1px solid #333;
+            transition: .3s;
+        }
+
+        .quick-services a:hover {
+            background: #e21b23;
+        }
+
+        .service-card {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .service-image {
+            position: relative;
+        }
+
+        .service-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(226,27,35,.88);
+            color: #fff;
+            font-size: 13px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            opacity: 0;
+            transition: .4s;
+        }
+
+        .service-card:hover .service-overlay {
+            opacity: 1;
+        }
+
+        @media (max-width: 700px) {
+            .company-story {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .story-image {
+                height: 350px;
+            }
+
+            .story-year {
+                font-size: 70px;
+            }
+
+            .story-stats {
+                gap: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+  <!-- ================= NAVBAR ================= -->
+<header class="navbar-container">
+    <div class="navbar">
+        <div class="logo-box">
+            <!-- Updated image source pointing to your logo file -->
+            <a class="logo-emblem" href="/Users/bannnelanithin/Downloads/Gemini_Generated_Image_gt2gxigt2gxigt2g.png" target="_blank" rel="noopener" aria-label="Open Sri Venkateswara Graphics logo">
+                <img src="/Users/bannnelanithin/Downloads/Gemini_Generated_Image_gt2gxigt2gxigt2g.png" alt="Sri Venkateswara Graphics Logo" onerror="this.hidden = true; this.parentElement.classList.add('logo-fallback');">
+            </a>
+            <div class="logo-text">
+                <span class="brand-name">VSG Prints and Packs </span>
+                <span class="brand-tagline"> MULTICOLOURS OFFSET PRINTING | DESIGN | SOLUTIONS</span>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-action">
+            <a href="#quote" class="quote-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                Get a Quote
+            </a>
+        </div>
+    </div>
+</header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <div class="established">
+                ESTABLISHED • 2002
+            </div>
+
+            <p class="hero-small">
+               MULTICOLOURS OFFSET PRINTING • PACKAGING • COMMERCIAL PRINT
+            </p>
+
+            <h1>
+                Printing
+                <span>Built</span>
+                To Last.
+            </h1>
+
+            <p class="hero-description">
+                Professional offset printing solutions for books,
+                calendars, pharmaceutical boxes, packaging,
+                brochures and much more.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#quote" class="primary-btn">
+                    Get a Free Quote
+                </a>
+
+                <a href="#services" class="secondary-btn">
+                    Explore Services →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img
+                src="/Users/bannnelanithin/Downloads/ad129df6-179d-4440-8286-dcf7fe39402c.JPG"
+                alt="Industrial Printing Press"
+            >
+
+            <div class="hero-image-label">
+                <strong>PRECISION PRINTING</strong>
+                <span>Production • Quality • Finishing</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= COMPANY STORY ================= -->
+
+    <section class="company-story">
+
+        <div class="story-image">
+            <img
+                src="/Users/bannnelanithin/Downloads/1d65209e-daee-4c27-9ba1-71ba2d57f9c8.JPG"
+                alt="Industrial Multicolor Offset Printing Press"
+            >
+        </div>
+
+        <div class="story-content">
+
+            <span class="story-year">1998</span>
+
+            <p class="section-label">
+                OUR JOURNEY
+            </p>
+
+            <h2>
+                Nearly Three Decades
+                <span>Of Print.</span>
+            </h2>
+
+            <p>
+                Established in 1998, Venkatasai Graphics
+                has grown with the changing needs of businesses,
+                publishers, institutions and product manufacturers.
+            </p>
+
+            <p>
+                From offset printing to packaging and finishing,
+                we bring multiple stages of print production together
+                under one roof.
+            </p>
+
+            <div class="story-stats">
+                <div>
+                    <strong>1998</strong>
+                    <span>Established</span>
+                </div>
+                <div>
+                    <strong>29+</strong>
+                    <span>Years of Experience</span>
+                </div>
+                <div>
+                    <strong>360°</strong>
+                    <span>Print Solutions</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about">
+
+        <div class="about-image">
+
+            <img
+                src="/Users/bannnelanithin/Downloads/c96a7378-6aaf-432a-9c4f-8a343dd22ee6.JPG"
+                alt="Printing Press Facility"
+            >
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="section-label">
+                ABOUT OUR COMPANY
+            </p>
+
+            <h2>
+                Printing Quality
+                <span>You Can Trust.</span>
+            </h2>
+
+            <p>
+                We provide professional offset printing and packaging
+                solutions for businesses, publishers, institutions and
+                organizations.
+            </p>
+
+            <p>
+                From pre-press preparation to printing, finishing,
+                quality inspection and dispatch, we handle the complete
+                printing process under one roof.
+            </p>
+
+            <a href="#contact" class="primary-btn">
+                Know More About Us →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+
+    <section id="services" class="services">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                WHAT WE PRINT
+            </p>
+
+            <h2>
+                Our Printing
+                <span>Services</span>
+            </h2>
+
+            <p>
+                Complete printing solutions for every requirement.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <!-- BOOKS -->
+
+            <div class="service-card">
+
+                <div class="service-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=1000&q=85"
+                        alt="Book Printing"
+                    >
+
+                </div>
+
+                    <div class="service-overlay">VIEW SERVICE →</div>
+
+                <div class="service-content">
+
+                    <span class="service-number">01</span>
+
+                    <h3>Books & Publications</h3>
+
+                    <p>
+                        Textbooks, notebooks, novels, magazines,
+                        journals, catalogues and publications.
+                    </p>
+
+                    <a href="pages/books.html">
+                        Explore Service →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- CALENDARS -->
+
+            <div class="service-card">
+
+                <div class="service-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1000&q=85"
+                        alt="Calendar Printing"
+                    >
+
+                </div>
+
+                    <div class="service-overlay">VIEW SERVICE →</div>
+
+                <div class="service-content">
+
+                    <span class="service-number">02</span>
+
+                    <h3>Calendars</h3>
+
+                    <p>
+                        Wall calendars, desk calendars, table calendars
+                        and customized corporate calendars.
+                    </p>
+
+                    <a href="pages/calendars.html">
+                        Explore Service →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PACKAGING -->
+
+            <div class="service-card">
+
+                <div class="service-image">
+
+                    <img
+                        src="https://m.media-amazon.com/images/I/61h-5NsO8KL._AC_UF1000,1000_QL80_.jpghttps://m.media-amazon.com/images/I/61h-5NsO8KL._AC_UF1000,1000_QL80_.jpg"
+                        alt="Packaging Printing"
+                    >
+
+                </div>
+
+                    <div class="service-overlay">VIEW SERVICE →</div>
+
+                <div class="service-content">
+
+                    <span class="service-number">03</span>
+
+                    <h3>Packaging</h3>
+
+                    <p>
+                        Custom printed cartons, product boxes,
+                        retail packaging and folding boxes.
+                    </p>
+
+                    <a href="pages/packaging.html">
+                        Explore Service →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- MEDICAL BOXES -->
+
+            <div class="service-card">
+
+                <div class="service-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1585435557343-3b092031a831?auto=format&fit=crop&w=1000&q=85"
+                        alt="Pharmaceutical Box Printing"
+                    >
+
+                </div>
+
+                    <div class="service-overlay">VIEW SERVICE →</div>
+
+                <div class="service-content">
+
+                    <span class="service-number">04</span>
+
+                    <h3>Medical Boxes</h3>
+
+                    <p>
+                        Pharmaceutical cartons, medicine boxes,
+                        healthcare packaging and inserts.
+                    </p>
+
+                    <a href="pages/medical.html">
+                        Explore Service →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- COMMERCIAL -->
+
+            <div class="service-card">
+
+                <div class="service-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=1000&q=85"
+                        alt="Commercial Printing"
+                    >
+
+                </div>
+
+                    <div class="service-overlay">VIEW SERVICE →</div>
+
+                <div class="service-content">
+
+                    <span class="service-number">05</span>
+
+                    <h3>Commercial Printing</h3>
+
+                    <p>
+                        Brochures, flyers, posters, catalogues,
+                        company profiles and stationery.
+                    </p>
+
+                    <a href="pages/commercial.html">
+                        Explore Service →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- LABELS -->
+
+            <div class="service-card">
+
+                <div class="service-image">
+
+                    <img
+                        src="https://cdn.makestickers.com/products/49c5019e03bd477591c493b97b5cb237.webp"
+                        alt="Label Printing"
+                    >
+
+                </div>
+
+                    <div class="service-overlay">VIEW SERVICE →</div>
+
+                <div class="service-content">
+
+                    <span class="service-number">06</span>
+
+                    <h3>Labels & Stickers</h3>
+
+                    <p>
+                        Product labels, packaging labels, barcode
+                        labels and custom stickers.
+                    </p>
+
+                    <a href="pages/labels.html">
+                        Explore Service →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FINISHING ================= -->
+
+    <section class="finishing">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                COMPLETE PRINTING SOLUTIONS
+            </p>
+
+            <h2>
+                Printing + 
+                <span>Finishing</span>
+            </h2>
+
+        </div>
+
+
+        <div class="finishing-grid">
+
+            <div class="finish-item">
+                <div>01</div>
+                <h3>Lamination</h3>
+                <p>Matte and gloss finishing.</p>
+            </div>
+
+            <div class="finish-item">
+                <div>02</div>
+                <h3>Spot UV</h3>
+                <p>Premium selective UV finishing.</p>
+            </div>
+
+            <div class="finish-item">
+                <div>03</div>
+                <h3>Die Cutting</h3>
+                <p>Custom shapes and packaging cuts.</p>
+            </div>
+
+            <div class="finish-item">
+                <div>04</div>
+                <h3>Foil Stamping</h3>
+                <p>Premium metallic finishing.</p>
+            </div>
+
+            <div class="finish-item">
+                <div>05</div>
+                <h3>Binding</h3>
+                <p>Perfect binding and saddle stitching.</p>
+            </div>
+
+            <div class="finish-item">
+                <div>06</div>
+                <h3>Folding & Creasing</h3>
+                <p>Accurate folding and creasing.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROCESS ================= -->
+
+    <section id="process" class="process">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                HOW WE WORK
+            </p>
+
+            <h2>
+                From Idea To
+                <span>Finished Product.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="process-container">
+
+
+            <div class="process-step">
+
+                <span>01</span>
+
+                <h3>Requirement</h3>
+
+                <p>
+                    Share your printing requirements
+                    with our team.
+                </p>
+
+            </div>
+
+
+            <div class="process-line"></div>
+
+
+            <div class="process-step">
+
+                <span>02</span>
+
+                <h3>Pre-Press</h3>
+
+                <p>
+                    Artwork checking, layout preparation
+                    and plate processing.
+                </p>
+
+            </div>
+
+
+            <div class="process-line"></div>
+
+
+            <div class="process-step">
+
+                <span>03</span>
+
+                <h3>Printing</h3>
+
+                <p>
+                    High-quality offset printing
+                    using professional equipment.
+                </p>
+
+            </div>
+
+
+            <div class="process-line"></div>
+
+
+            <div class="process-step">
+
+                <span>04</span>
+
+                <h3>Finishing</h3>
+
+                <p>
+                    Cutting, folding, lamination,
+                    binding and other finishing.
+                </p>
+
+            </div>
+
+
+            <div class="process-line"></div>
+
+
+            <div class="process-step">
+
+                <span>05</span>
+
+                <h3>Delivery</h3>
+
+                <p>
+                    Quality checked, packed and
+                    dispatched to the customer.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section id="gallery" class="gallery">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                OUR WORK
+            </p>
+
+            <h2>
+                Printed With
+                <span>Precision.</span>
+            </h2>
+
+        </div>
+
+</div>
+        <div class="gallery-grid">
+
+            <img src="/Users/bannnelanithin/Documents/Screenshot 2026-10-01 at 11.10.22 AM.png" alt="Printed Work">
+
+            <img src="/Users/bannnelanithin/Documents/Screenshot 2026-10-01 at 2.16.07 PM.png" alt="Printed Work">
+
+            <img src="https://cpimg.tistatic.com/06279853/s/4/Printed-Labels-Roll.jpg" alt="Printed Work">
+
+            <img src="/Users/bannnelanithin/Documents/Screenshot 2026-10-01 at 11.09.58 AM.png" alt="Printed Work">
+
+            <img src="/Users/bannnelanithin/Documents/Screenshot 2026-10-01 at 2.19.31 PM.png" alt="Printed Work">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8rUv1gja8VN7Bue0c_GHeKkjqhL-8irjIWv9DLPftUg&s=10" alt="Printed Work">
+
+        </div>
+
+    </section>
+
+<section class="logo-section">
+
+    <h2>Our Clients</h2>
+
+    <div class="logo-slider">
+        <div class="logo-track">
+
+            <img src="https://ltmetro.com/wp-content/uploads/2025/01/lt-metro-rail-logo.jpg" alt="Client 1">
+            <img src="https://images.sbvu.ac.in/wp-content/uploads/2019/09/mgmcri_logo-300x275.png?strip=all" alt="Client 2">
+            <img src="/Users/bannnelanithin/Documents/Screenshot 2026-10-01 at 10.47.20 AM.png" alt="Client 3">
+            <img src="https://play-lh.googleusercontent.com/koQyzzbdcnHLMqRmjFqheFmfHUVQo6bRXEZGsr-soVjv_AKudOaI4r0QVstrEcZbZ-0-OocxTsoRom_xyetwWg" alt="Client 4">
+            <img src="https://m.media-amazon.com/images/I/31JmR8LP3EL._AC_UF350,350_QL80_.jpg" alt="Client 5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRedyaf3fZnIiO0AEwC8AoLFuntiF4OEyP9VRD8RrzzfA&s" alt="Client 6">
+
+            <!-- Duplicate logos for infinite scrolling -->
+            <img src="https://media.licdn.com/dms/image/v2/C560BAQHdvQjvDNd0ug/company-logo_200_200/company-logo_200_200/0/1630658315039/omnihospitals_logo?e=2147483647&v=beta&t=y58h4zC5ZwtlcdKd0xZ537y79D2PnibyMj9H2MCr8Ag" alt="Client 1">
+            <img src="https://media.licdn.com/dms/image/v2/D560BAQHY1ds0k8tWuw/company-logo_200_200/company-logo_200_200/0/1687581971262?e=2147483647&v=beta&t=hKlCXw0-zIPpjr_SmjNB9TOXns7myDsddGACJCoPQLg" alt="Client 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3cjXHiiG28SY5szIDcWTG1aLTh1hIoWXaAji-wD3oyg&s=10" alt="Client 3">
+            <img src="/Users/bannnelanithin/Documents/Screenshot 2026-10-01 at 10.52.15 AM.png" alt="Client 4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqYCS7xmwAihCNeI_jzP_alwu64Te-pi5rQ8QbaqUwu-QKIMEphCMzdeEC&s=10">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTHDiRUDvfxscgUTjpDXYFNB8FQN9JCtgr1X3CS0Hy9nX5r5tbwTa4Th4&s=10" alt="Client 6">
+
+        </div>
+    </div>
+
+</section>
+
+
+    <!-- ================= QUOTE ================= -->
+
+    <section id="quote" class="quote">
+
+        <div class="quote-content">
+
+            <p class="section-label">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                Tell Us What
+                <span>You Want To Print.</span>
+            </h2>
+
+            <p>
+                Send us your requirements and our team will
+                get back to you with a quotation.
+            </p>
+
+        </div>
+
+
+        <form class="quote-form">
+
+            <div class="form-row">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="text"
+                    placeholder="Company Name"
+                >
+
+            </div>
+
+
+            <div class="form-row">
+
+                <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Email Address"
+                >
+
+            </div>
+
+
+            <select required>
+
+                <option value="">
+                    What do you want to print?
+                </option>
+
+                <option>Books</option>
+                <option>Calendars</option>
+                <option>Medical Boxes</option>
+                <option>Packaging</option>
+                <option>Brochures</option>
+                <option>Magazines</option>
+                <option>Labels & Stickers</option>
+                <option>Other</option>
+
+            </select>
+
+
+            <div class="form-row">
+
+                <input
+                    type="text"
+                    placeholder="Quantity"
+                >
+
+                <input
+                    type="text"
+                    placeholder="Required Size"
+                >
+
+            </div>
+
+
+            <textarea
+                rows="5"
+                placeholder="Tell us about your printing requirement..."
+            ></textarea>
+
+
+            <button type="submit" class="primary-btn">
+                Send Enquiry →
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <div class="contact-info">
+
+            <p class="section-label">
+                CONTACT US
+            </p>
+
+            <h2>
+                Let's Print
+                <span>Something Great.</span>
+            </h2>
+
+            <p>
+                Have a printing requirement?
+                Talk to our team today.
+            </p>
+
+        </div>
+
+
+        <div class="contact-details">
+
+            <div>
+                <span>📍</span>
+
+                <h3>Our Location</h3>
+
+                <p>
+                    MIG 2, Block No1, Flat No 3. Opposite Sundaraiah Park Gate. <br>
+                    Baghlingam Pally<br>
+                    Hyderabad, Telangana
+                </p>
+            </div>
+
+
+            <div>
+                <span>📞</span>
+
+                <h3>Call Us</h3>
+
+                <p>
+                    +91 8978647348<br>
+                    +91 9705200075
+                     
+                    </p>
+            </div>
+
+
+            <div>
+                <span>✉️</span>
+
+                <h3>Email</h3>
+
+                <p>
+                    venkatasaigraphics4u@gmail.com
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            <span>VSG Prints and Packs</span><br>PRINTING PRESS
+        </div>
+
+        <p>
+            VSG Prints and Packs • Offset Printing & Packaging • Established 1997.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Our Work</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 VSG Prints and Packs. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= WHATSAPP BUTTON ================= -->
+
+    <a
+        href="https://wa.me/918978647348"
+        class="whatsapp"
+        target="_blank"
+    >
+        💬
+    </a>
+
+
+    <!-- JavaScript -->
+<script src="code.js"></script>
+
+</body>
+</html>
+
